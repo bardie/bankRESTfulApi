@@ -9,15 +9,15 @@
 
 ## Installation
 
-1.Import the api_bank_account sql file located in the database folder into your MySQL database.
-2.Extract The Codeigniter zip folder into your localhost directory...wwww for wamp and htdocs for XAMPP
-3.Run the project after successfully starting the apache server on http://localhost/codeigniter
-4.The homepage contains the GET endpoits to access the bankaccount balances and instructions to the other endpoints
-5.To deposit an amount into the database , make POST request to this uri preferrably using POSTMAN tool
+* Import the api_bank_account sql file located in the database folder into your MySQL database.
+* Extract The Codeigniter zip folder into your localhost directory...wwww for wamp and htdocs for XAMPP
+* Run the project after successfully starting the apache server on http://localhost/codeigniter
+* The homepage contains the GET endpoits to access the bankaccount balances and instructions to the other endpoints
+* To deposit an amount into the database , make POST request to this uri preferrably using POSTMAN tool
     e.g http://localhost/codeigniter/index.php/api/v1/deposit/1000
-6.To withdraw an amount from the database , make a POST request to this uri preferrably using POSTMAN tool
+* To withdraw an amount from the database , make a POST request to this uri preferrably using POSTMAN tool
     e.g http://localhost/codeigniter/index.php/api/v1/withdrawal/1000
-7.When a successfull deposit is made , the amount deposited is incremented to the balance table and to the daily amounts added per day  table called 'daily_amount_counter' to check total amount deposited in a day also the transaction number is added to 'daily_amount_counter' table to check for maximum transactions done in a day
-8.7.When a successfull withdrawal is made , the amount withdrawn is reduced to the balance table and to the daily amounts withrawn per day  table called 'daily_withdrawal_counter' to check total amount withdrawn in a day also the transaction number is added to 'daily_withdrawal_counter' table to check for maximum transactions done in a day
+* When a successfull deposit is made , the amount deposited is incremented to the balance table and to the daily amounts added per day  table called 'daily_amount_counter' to check total amount deposited in a day also the transaction number is added to 'daily_amount_counter' table to check for maximum transactions done in a day
+* When a successfull withdrawal is made , the amount withdrawn is reduced to the balance table and to the daily amounts withrawn per day  table called 'daily_withdrawal_counter' to check total amount withdrawn in a day also the transaction number is added to 'daily_withdrawal_counter' table to check for maximum transactions done in a day
 
 
